@@ -1,16 +1,14 @@
 import './Header.css'
 
-import logo from '../../assets/logo.svg'
+import Logo from '../../components/Logo/Logo'
 import NavDrawer from '../../components/Drawer/Drawer';
+import { useState } from 'react';
 
 function Header({className="", ...props}){
 
     return(
         <header className={`web-section navigation-header flex block-center sb ${className}`}>
-            <div className='img-container logo-container'>
-                <img src={logo} alt="" />
-            </div>
-
+            <Logo/>
             <NavDrawer />
         </header>
     )

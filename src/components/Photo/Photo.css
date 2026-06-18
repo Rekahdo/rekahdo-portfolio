@@ -1,0 +1,11 @@
+:root{
+    --photo-container-height: 100px;
+}
+
+.photo-container{
+    height: var(--photo-container-height);
+
+    &.drawer{
+        --photo-container-height: 50px;
+    }
+}

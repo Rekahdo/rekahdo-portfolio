@@ -1,12 +1,16 @@
 :root{
-    --header-side-bar-width: 100dvw;
-    --header-side-bar-bg: hsla(215, 100%, 4%, var(--header-overlay-opacity));
+    --drawer-side-bar-width: 100vw;
+    --drawer-side-bar-bg: hsla(215, 100%, 4%, var(--drawer-overlay-opacity));
     
-    --header-content-bg: #0D3066;
-    --header-content-width: calc(var(--header-side-bar-width) - 30dvw);
+    --drawer-content-bg: #0c2c5d;
+    --drawer-content-bg-hover: hsl(216, 77%, 41%);
+    --drawer-content-bg-active: hsl(216, 77%, 51%);
+    --drawer-content-width: calc(var(--drawer-side-bar-width) - 30vw);
     
-    --header-overlay-opacity: 0.85;
-    --header-overlay-width: calc(var(--header-side-bar-width) - var(--header-content-width));
+    --drawer-overlay-opacity: 0.85;
+    --drawer-overlay-width: calc(var(--drawer-side-bar-width) - var(--drawer-content-width));
+
+    --drawer-fg: white;
 }
 
 .nav-drawer{
@@ -15,23 +19,24 @@
     }
 
     section{
-        width: var(--header-side-bar-width);
+        width: var(--drawer-side-bar-width);
         height: 100dvh;
         position: fixed;
         top: 0px;
-        left: calc(var(--header-side-bar-width) * -1);
-        background-color: var(--header-side-bar-bg);
+        left: calc(var(--drawer-side-bar-width) * -1);
+        background-color: var(--drawer-side-bar-bg);
         display: flex;
         
         .content{
-            width: var(--header-content-width);
-            background-color: var(--header-content-bg);
-            border-radius: 0 20px 20px 0;
+            width: var(--drawer-content-width);
+            background-color: var(--drawer-content-bg);
+            border-radius: 0 4dvh 4dvh 0;
+            overflow: hidden;
         }
         
         .overlay{
             width: 100px;
-            opacity: var(--header-side-bar-opacity);
+            opacity: var(--drawer-side-bar-opacity);
             background-color: inherit;
         }
     }
@@ -45,6 +50,50 @@
         section{
             z-index: 5;
             left: 0px;
+        }
+    }
+
+    .content{
+        row-gap: 4dvh;
+
+        & * {
+            color: var(--drawer-fg);
+            text-decoration: none;
+        }
+
+        hr{
+            border-radius: 50px;
+            border-color: var(--drawer-fg);
+            opacity: 0.4;
+        }
+
+        ul{
+            list-style: none;
+            row-gap: 2dvh;
+
+            li{
+                a{
+                    display: block;
+                    width: 100%;
+                    padding-block: 1dvh;
+                    padding-inline: 1dvh;
+                    border-radius: 1dvh;
+
+                    &:hover{
+                        background-color: var(--drawer-content-bg-hover)
+                    }
+                    
+                    &:active{
+                        background-color: var(--drawer-content-bg-active)
+                    }
+                }
+            }
+
+            & > *{
+                width: 100%;
+
+            }
+
         }
     }
 }

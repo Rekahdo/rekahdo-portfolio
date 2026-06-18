@@ -1,15 +1,12 @@
+
 :root{
     --header-height: 8dvh;
-    --header-logo-container-height: 30px;
 }
 
 .navigation-header{
     height: var(--header-height);
     padding-inline: 8dvw;
     background-color: var(--scheme-clr);
-
-    .logo-container{
-        height: var(--header-logo-container-height);
-    }
-
+    font-family: "Space Grotesk", sans-serif;
+    
 }

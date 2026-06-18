@@ -1,0 +1,7 @@
+:root{
+    --logo-container-height: 30px;
+}
+
+.logo-container{
+    height: var(--logo-container-height);
+}
