@@ -1,25 +1,17 @@
 import './Header.css'
 
-import Menu from '../../components/Menu/Menu';
-import { useState } from 'react';
+import logo from '../../assets/logo.svg'
+import NavDrawer from '../../components/Drawer/Drawer';
 
 function Header({className="", ...props}){
 
-    const [isChecked, setIsChecked] = useState(true);
-
-    const toogleMenu = (e) => {
-        setIsChecked(e.target.checked)
-    };
-
     return(
         <header className={`web-section navigation-header flex block-center sb ${className}`}>
-            <div className='logo-container'>
-                <img src="src/assets/logo.svg" alt="" />
+            <div className='img-container logo-container'>
+                <img src={logo} alt="" />
             </div>
 
-            <nav>
-                <Menu isChecked={isChecked} onChange={toogleMenu}/>
-            </nav>
+            <NavDrawer />
         </header>
     )
 }

@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
+import './index.css'
 import './styles/variables.css'
 import './styles/reset.css'
 import './styles/utilities.css'
 import './styles/queries.css'
-import './index.css'
 
 import App from './App.jsx'
 

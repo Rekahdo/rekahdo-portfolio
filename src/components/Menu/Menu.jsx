@@ -1,10 +1,10 @@
 import './Menu.css'
 import { useState } from 'react';
 
-function Menu({className="", isChecked=false, ...props}){
+function Menu({className, isChecked=false, ...props}){
 
     return(
-        <label className="menu" {...props}>
+        <label className={`menu ${className}`} {...props}>
             <input type="checkbox" checked={isChecked} id="checkbox" />
             <div></div>
         </label>
