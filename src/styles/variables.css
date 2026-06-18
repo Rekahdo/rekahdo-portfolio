@@ -1,0 +1,10 @@
+:root{
+    --scheme-clr: #09162A;
+    --radial-bg: radial-gradient(circle, hsl(217, 100%, 20%) 0%, #09162A 80%);
+
+    --heading-clr: #0D3066;
+    --description-clr: #0F2A44;
+    --description-strong-clr: #1274A4;
+
+    --media-border-raduis: 2cqw;
+}

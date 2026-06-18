@@ -1,0 +1,8 @@
+:root{
+    --header-height: 8dvh;
+}
+
+.navigation-header{
+    height: var(--header-height);
+    background-color: var(--scheme-clr);
+}

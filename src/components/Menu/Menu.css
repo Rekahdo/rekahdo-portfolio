@@ -1,0 +1,46 @@
+:root{
+    --menu-bg: white;
+    --menu-height: 4px;
+    --menu-row-gap: var(--menu-height);
+    --menu-translateY: calc(var(--menu-height) * 2);
+    --menu-translateY-negative: calc(var(--menu-translateY) * -1);
+}
+
+.menu{
+    /* container: menu-container / size; */
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--menu-row-gap);
+    
+    & > *, &::before, &::after{
+        border-radius: 100px;
+        display: inline-block;
+        height: var(--menu-height);
+        aspect-ratio: 6/1;
+        background-color: var(--menu-bg);
+        transition: all 0.3s ease;
+    }
+
+    &::before, &::after{
+        content: "";
+    }
+
+    & > #checkbox{
+        display: none;
+    }
+
+    &:has(> #checkbox:checked){
+        & > * {
+            opacity: 0;
+            width: 10px;
+        }
+
+        &::before {
+            transform: translateY(var(--menu-translateY)) rotate(45deg);
+        }
+
+        &::after {
+            transform: translateY(var(--menu-translateY-negative)) rotate(-45deg);
+        }
+    }
+}

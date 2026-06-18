@@ -1,0 +1,7 @@
+:root{
+    --hero-height: calc(100dvh - var(--header-height))
+}
+
+.hero-section{
+    height: var(--hero-height);
+}
