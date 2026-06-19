@@ -4,7 +4,7 @@ import Menu from '../Menu/Menu';
 import Photo from '../Photo/Photo';
 import Button from '../Button/Button';
 
-import whatsApp from '../../assets/whatsApp.svg';
+import whatsApp from '../../assets/whatsapp.svg';
 import github from '../../assets/github.svg';
 import linkedin from '../../assets/linkedin.svg';
 
