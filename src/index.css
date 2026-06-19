@@ -1,0 +1,11 @@
+#in-development{
+    position: fixed;
+    top: 70px;
+    right: 5px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    border-radius: 20px;
+    color: white;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.458);
+}

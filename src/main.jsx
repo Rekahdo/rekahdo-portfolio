@@ -11,6 +11,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <p id='in-development'>In Development</p>
     <App />
   </StrictMode>,
 )
