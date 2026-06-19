@@ -1,5 +1,5 @@
 .web-section{
-    padding-block: 5dvw;
+    padding-block: 2dvh;
     padding-inline: 5dvw;
 }
 
@@ -9,6 +9,29 @@
 
 .flex, .flex-col{
     display: flex;
+
+    & > .fx-grow{
+        flex-grow: 1;
+    }
+
+    & > .fx-shrink{
+        flex-shrink: 1;
+    }
+}
+
+.flex, .flex-col, .grid{
+
+    &.sa{
+        justify-content: space-around;
+    }
+
+    &.sb{
+        justify-content: space-between;
+    }
+
+    &.se{
+        justify-content: space-evenly;
+    }
 }
 
 .flex{
@@ -42,18 +65,6 @@
 
     &.inline-end{
         justify-content: flex-end;
-    }
-
-    &.sa{
-        justify-content: space-around;
-    }
-
-    &.sb{
-        justify-content: space-between;
-    }
-
-    &.se{
-        justify-content: space-evenly;
     }
 }
 

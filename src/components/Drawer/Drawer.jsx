@@ -2,6 +2,11 @@ import './Drawer.css'
 
 import Menu from '../Menu/Menu';
 import Photo from '../Photo/Photo';
+import Button from '../Button/Button';
+
+import whatsApp from '../../assets/whatsApp.svg';
+import github from '../../assets/github.svg';
+import linkedin from '../../assets/linkedin.svg';
 
 import { useState } from 'react';
 
@@ -35,7 +40,13 @@ function Drawer({className, close=true, ...props}){
                     </ul>
 
                     <div>
-                        
+                        <div className='profile-links'>
+                            <a href="https://wa.me/2349059405621"><img src={whatsApp} alt="" /></a>
+                            <a href="https://github.com/Rekahdo"><img src={github} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/rekahdo"><img src={linkedin} alt="" /></a>
+                        </div>
+
+                        <Button />
                     </div>
 
                 </div>

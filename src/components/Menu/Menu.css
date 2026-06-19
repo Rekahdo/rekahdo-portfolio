@@ -7,7 +7,6 @@
 }
 
 .menu{
-    /* container: menu-container / size; */
     display: flex;
     flex-direction: column;
     row-gap: var(--menu-row-gap);

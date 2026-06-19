@@ -1,7 +1,48 @@
+
 :root{
-    --hero-height: calc(100dvh - var(--header-height))
+    --hero-height: calc(100dvh - var(--header-height));
+    --tag-bg: #001C33;
+    --tag-border: #008CFF;
 }
 
 .hero-section{
     height: var(--hero-height);
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    row-gap: 2dvh;
+    color: white;
+
+    .photo{
+
+    }
+
+    .details{
+        /* background-color: aquamarine; */
+        .greetings{
+            font-size: 1rem;
+        }
+
+        .name{
+            text-transform: uppercase;
+        }
+
+        .stack{
+            text-transform: capitalize;
+        }
+
+        .desc{
+            font-size: 0.7rem;
+            font-family: 'Fira Code', sans-serif;
+            font-weight: lighter;
+        }
+
+        .tag{
+            font-size: 0.4rem;
+            background-color: var(--tag-bg);
+            padding-inline: 2em;
+            padding-block: 0.6em;
+            border-radius: 5em;
+            border: 0.1em solid var(--tag-border);
+        }
+    }
 }

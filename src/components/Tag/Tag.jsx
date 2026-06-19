@@ -1,6 +1,6 @@
-import styles from './Button.module.css'
+import styles from './Tag.css'
 
-function Button({className="", children, onClick, type="submit", altBtn, ...props}){
+function Tag({className="", children, onClick, type="submit", altBtn, ...props}){
 
     const classes = className.split(' ')
         .map(cls => styles[cls] || cls).join(' ')
@@ -12,4 +12,4 @@ function Button({className="", children, onClick, type="submit", altBtn, ...prop
     );
 }
 
-export default Button
+export default Tag

@@ -4,8 +4,12 @@
 
 .photo-container{
     height: var(--photo-container-height);
-
+    
     &.drawer{
         --photo-container-height: 50px;
+    }
+
+    &.hero{
+        --photo-container-height: 10rem;
     }
 }
